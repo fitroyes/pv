@@ -1,11 +1,22 @@
-11 00c débat politique
+11 c débat politique
 Débat de politique générale à l’issue des Elections Législatives de Juin 2022
+- Baroin: bou on ne peu plus être maire et député (pour le cumul des mandats)
+- Baroin: propriétaire trop de taxe...
 
-35 1 nommageVoiesPubliques
+35 1 PÔLE:Culture_Sports_Animation du Territoire DIRECTION:Culture_Labels_et_Patrimoine_Vie_Associative
 DENOMINATION DES VOIES ET DES BATIMENTS PUBLICS
+- Rond-point de l'Europe / Valéry-Giscard
+- Complexe sportif de Foicy - Benjamin Nivet
+- Terrain d'honneur Maurice-de-Faup (au Complexe sportif de Foicy)
+- Terrain synthétique n°1 Robert Jacques et Terrain synthétique n°2 Gilles Bassigny (au Complexe sportif de Foicy)
+// remarque de Mme ZAJAC: nomer un square ou un parc en Nelson MANDELA + plus de nom féminin
 
-38 00d eau
-NOTE D’INFORMATION SUR LE CONSEIL DE LA POLITIQUE DE L’EAU
+38 d
+NOTE D'INFORMATION SUR LE CONSEIL DE LA POLITIQUE DE L'EAU (COPE)
+- Prix du service
+- Evolution du rendement de réseau et projets structurants
+- La rehabilatation de Courgerennes (2 million €)
+- La rehabiliatation de l'Aqueduc
 
 41 2 musée
 PÔLE MUSÉAL
