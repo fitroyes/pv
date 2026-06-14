@@ -1,0 +1,9 @@
+00 Installation du Conseil.
+0A Désignation d’un secrétaire de séance, de 4 assesseurs, de 4 auxiliaires de séance.
+01 Élection du Président
+02 Élection des Vice-présidents
+0B Approbation du procès-verbal du Conseil Syndical du 13 mai 2022.
+03 Délégation d’attributions du Comité syndical au Président
+04 SPL XDEMAT : approbation du rapport de gestion
+05 Adoption du logo du Pôle Métropolitain et de sa Charte graphique
+06 Questions diverses.

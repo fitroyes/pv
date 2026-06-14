@@ -7,10 +7,12 @@ body {
 }
 
 h1 {
-	text-decoration: underline .3ex;
+	background: black;
+	color: white;
+	display: table;
+	padding: 1ex 2ex;
 	position: sticky;
 	top: 0;
-	background: #FFFCF4;
 }
 
 @media screen and (min-width: 100ex) {
@@ -63,6 +65,12 @@ div {
 	header,
 	aside {
 		display: none;
+	}
+
+	h1 {
+		color: black;
+		background: white;
+		border: solid .3ex;
 	}
 
 	a {
