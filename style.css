@@ -17,7 +17,7 @@ h1 {
 
 @media screen and (min-width: 100ex) {
 	body {
-		grid-template-columns: auto 1fr;
+		grid-template-columns: 1fr 4fr;
 	}
 
 	header {
@@ -26,14 +26,14 @@ h1 {
 }
 
 header {
-	background: #2e9959;
+	background: #f9c900;
 	font-size: 500%;
 	font-weight: bold;
 	padding: 1ex;
 }
 
 aside {
-	background: #ed5fb1;
+	background: #2e9959;
 }
 
 main {

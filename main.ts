@@ -53,6 +53,7 @@ for await (const { name: dir, isDirectory } of Deno.readDir(".")) {
 		),
 	);
 }
+dirs.sort();
 
 async function parse(
 	i: number,
