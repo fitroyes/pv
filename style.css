@@ -11,8 +11,6 @@ h1 {
 	color: white;
 	display: table;
 	padding: 1ex 2ex;
-	position: sticky;
-	top: 0;
 }
 
 @media screen and (min-width: 100ex) {
@@ -80,5 +78,20 @@ div {
 	main {
 		border-left: none;
 		padding-left: 0;
+	}
+}
+
+#toc>div {
+	top: 0;
+	position: sticky;
+	overflow-y: scroll;
+	max-height: 100vh;
+
+	a {
+		display: block;
+
+		&[data-v="true"] {
+			background: #f9c900;
+		}
 	}
 }

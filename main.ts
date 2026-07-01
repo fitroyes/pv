@@ -8,6 +8,8 @@ const STYLE = (await Deno.readTextFile("style.css"))
 	.replaceAll(" {", "{")
 	.replaceAll(";}", "}");
 
+const TOC = (await Deno.readTextFile("toc.js")).replaceAll(/[\r\n\t]/g, "");
+
 await Deno.mkdir("public", { recursive: true });
 
 const dirs = [];
@@ -36,11 +38,14 @@ for await (const { name: dir, isDirectory } of Deno.readDir(".")) {
 				"body.withAside",
 				HTML.html("header", HTML.htmlAttr`a href=.`("<-"), " ", dir),
 				HTML.html(
-					"aside",
-					files.map((file, i) =>
-						HTML.htmlAttr`a.toc href=#${i + ""}`(
-							file.replace(".txt", ""),
-						)
+					"aside id=toc",
+					HTML.html(
+						"div",
+						files.map((file, i) =>
+							HTML.htmlAttr`a.toc href=#${i + ""}`(
+								file.replace(".txt", ""),
+							)
+						),
 					),
 				),
 				HTML.html(
@@ -49,6 +54,7 @@ for await (const { name: dir, isDirectory } of Deno.readDir(".")) {
 						files.map((name, i) => parse(i, dir, name)),
 					),
 				),
+				HTML.html("script", { h: TOC }),
 			),
 		),
 	);
@@ -63,8 +69,8 @@ async function parse(
 	return HTML.html(
 		"div",
 		HTML.html(
-			"h1",
-			HTML.htmlAttr`a id=${i + ""} href=#${i + ""}`("#"),
+			`h1 id=${i + ""}`,
+			HTML.htmlAttr`a href=#${i + ""}`("#"),
 			" ",
 			name.replace(".txt", ""),
 		),
